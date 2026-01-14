@@ -94,7 +94,7 @@ function renderCart() {
     cartList.innerHTML += `
       <div class="flex flex-col border-t-2 border-black/10 rounded-lg shadow p-3 my-3 hover:-translate-y-1 transition ">
         <div class="flex mb-2">
-          <img class="h-20 w-20 rounded-lg"
+          <img class="h-20 w-20 rounded-lg object-cover"
             src="${item.photo}"
             alt=""
           />
