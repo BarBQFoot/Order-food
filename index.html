@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+  </head>
+  <body
+    class="min-h-screen overflow-y-auto"
+    style="
+      background: linear-gradient(
+        135deg,
+        #ffcfa7 0%,
+        #f8d7da 25%,
+        #e8f5e8 75%,
+        #b8f2d0 100%
+      );
+    "
+  >
+   
+    <div class="flex flex-col justify-center sm:flex-row gap-5 pt-8 ">
+      <div
+        class="h-[800px] flex flex-col w-full max-w-xl border border-gray-200 px-5 bg-white/30 backdrop-blur-2xl rounded-lg shadow-2xl "
+      >
+       <div class="flex justify-between items-center py-3">
+        <h1 class="text-4xl">รายการอาหารทั้งหมด</h1>
+          <a href="#cart">
+            <img class="h-10 w-10 object-cover" src="https://images.icon-icons.com/3002/PNG/512/trolley_cart_icon_187754.png" alt="cart" />
+          </a>
+        </div>
+        
+        <div class="add-food overflow-y-auto">
+
+    
+        
+         
+        </div>
+      </div>
+
+      <div
+        class="h-[800px] flex flex-col w-full max-w-xl bg-white/30 backdrop-blur-2xl border border-gray-200 px-5 rounded-lg shadow-2xl "
+        id="cart">
+        <h1 class="text-4xl py-3">ตะกร้าสินค้า</h1>
+        <div id="cart-list" class="flex-1 overflow-y-auto">
+
+
+
+        
+        </div>
+          
+          <div class="flex flex-col my-5">
+            <div class="space-y-2 text-xl border-black border-t-2 py-2">
+                <div class="flex justify-between">
+                    <span class=" text-gray-600">จำนวนรายการ:</span>
+                    <span class="total-item font-semibold">0</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-gray-600">จำนวนสินค้า:</span>
+                    <span class="total-qty font-semibold">0</span>
+                </div>
+                </div>
+            <div class="text-2xl py-2 border-black border-t-2 space-y-2">
+                <div class="flex justify-between">
+                    <span>ยอดรวมย่อย:</span>
+                    <span class="total-price">0 บาท</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>รวมทั้งหมด:</span>
+                    <span class="sub-price">0 บาท</span>
+                </div>
+            </div>
+            <div class="text-2xl py-2  space-y-2">
+                <button class="w-full text-3xl bg-green-500 p-4 rounded-lg hover:bg-green-700 transition duration-700">ชำระเงิน</button>
+                
+                <button class="remove-food w-full bg-gray-300 p-2 rounded-lg hover:bg-gray-500 transition duration-700">ล้างตะกร้า</button>
+            </div>
+            
+       </div>
+    
+        </div>
+    
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
